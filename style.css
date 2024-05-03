@@ -1,0 +1,623 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --secondary-background-color: rgb(71, 71, 71);
+    --hover-color: rgb(168, 168, 168);
+    --main-background-color: rgb(41, 41, 41);
+    --bears-background: rgb(101,56,24);
+    --ryisi-background: rgb(224, 177, 140);
+    --barsi-background: rgb(129,224,253);
+    --eagles-background: rgb(255, 219, 88);
+    --main-text: white;
+    --secondary-text: black;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 22px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+/* шапка сайта */
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: var(--main-background-color);
+}
+
+.header_menu {
+    margin-left: auto;
+    align-items: center;
+}
+
+.profile_photo {
+    width: 45px;
+    height: 45px;
+    margin: 6px 6px 6px 6px;
+    border: 1px solid var(--main-text);
+    border-radius: 50px;
+}
+
+/*  */
+
+.left_gerb {
+    position: absolute;
+    width: 212px;
+    height: 425px;
+    left: 0px;
+    top: 275px;
+}
+
+.right_gerb {
+    position: absolute;
+    width: 212px;
+    height: 425px;
+    right: 0px;
+    top: 275px;
+}
+/*  */
+
+/* profile */
+
+.profile_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.big_profile_pic {
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border: 1px solid var(--main-text);
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left_grid {
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left_grid_element {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--main-background-color);
+    color: var(--main-text);
+}
+
+.legend {
+    padding-bottom: 260px;
+}
+
+.left_grid_content {
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.left_grid_content:last-child {
+    margin: 0 auto;
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+
+.right_grid {
+    display: flex;
+    background-color: var(--main-background-color);
+    margin-top: 28px;
+    border-radius: 15px;
+}
+
+/* профиль админа */
+.form_container {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: var(--secondary-background-color);
+    max-width: 910px;
+    width: 100%;
+    color: var(--main-text);
+}
+
+.form_container * {
+    margin-left: 28px;
+}
+
+.form_container:first-child {
+    padding-top: 16px;
+}
+
+.adm_inp {
+    max-width: 750px;
+    height: 45px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.confirm_points {
+    width: 250px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    border: 1px solid var(--main-background-color);
+    border-radius: 5px;
+    background-color: var(--main-text);
+    color: var(--main-background-color);
+}
+
+.confirm_points:hover {
+    background-color: var(--hover-color);
+}
+/*  */
+
+/* Контейнер для форм создания аккаунта и добавления ребенка в команду */
+
+.create_add_container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background-color);
+    border-radius: 15px;
+    margin-top: 20px;
+    color: var(--main-text);
+}
+
+.create_add_container * {
+    margin-left: 28px;
+}
+
+.create_add_container:first-child {
+    padding-top: 16px;
+}
+
+.confirm_create {
+    width: 250px;
+    height: 50px;
+    margin: 28px auto 28px auto;
+    border: 1px solid var(--main-background-color);
+    border-radius: 5px;
+    background-color: var(--main-text);
+    color: var(--main-background-color);
+}
+
+.confirm_create:hover {
+    background-color: var(--hover-color);
+}
+
+
+
+/* команды */
+
+.team_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--main-background-color);
+    border-radius: 15px;
+}
+
+.legend_txt {
+    font-size: 24px;
+    padding: 32px 0px 32px 0px;
+}
+
+.rating_output {
+    background-color: var(--main-background-color);
+    border-radius: 15px;
+    margin-top: 24px;
+    color: var(--main-text);
+}
+
+.rate_name {
+    font-size: 48px;
+    margin: 24px 0px 24px 24px;
+}
+
+.rate_num {
+    font-size: 48px;
+    margin: 24px 24px 24px auto;
+}
+
+.rate_main {
+    display: flex;
+    align-items: center;
+}
+
+.lr {
+    margin-left: 24px;
+}
+
+.rr {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.team_icon {
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+    padding-top: 6px;
+}
+
+.start {
+    padding-top: 24px;
+}
+
+/* медведи */
+
+.bears_legend {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bears-background);
+    color: var(--main-text);
+    margin: 24px 0px 24px 24px;
+    border-radius: 10px;
+}
+
+.bears_legend * {
+    margin: 0 auto;
+}
+
+/* рыси */
+
+.ryisi_legend {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ryisi-background);
+    color: var(--secondary-text);
+    margin: 24px 0px 24px 24px;
+    border-radius: 10px;
+}
+
+.ryisi_legend * {
+    margin: 0 auto;
+}
+
+/* барсы */
+
+.bars_icon {
+    width: 58px;
+    height: 48px;
+    padding-top: 6px;
+    margin-left: 16px;
+}
+
+.bars_legend {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--barsi-background);
+    color: var(--secondary-text);
+    margin: 24px 0px 24px 24px;
+    border-radius: 10px;
+}
+
+.bars_legend * {
+    margin: 0 auto;
+}
+
+/* орлы */
+
+.eagles_legend {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--eagles-background);
+    color: var(--secondary-text);
+    margin: 24px 0px 24px 24px;
+    border-radius: 10px;
+}
+
+.eagles_legend * {
+    margin: 0 auto;
+}
+
+
+/* авторизация */
+
+.aut_cont {
+    display: flex;
+    margin: 0 auto;
+}
+
+.authorization_button {
+    height: 100px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 370px;
+    background-color: var(--main-text);
+    color: var(--main-background-color);
+    font-size: 36px;
+}
+
+.authorization_button:hover {
+    background-color: var(--hover-color);
+}
+
+.authorization_box {
+    display: flex;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.reg_cont {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--main-background-color);
+    color: var(--main-text);
+    margin-top: 48px;
+}
+
+.reg_cont * {
+    margin-left: 26px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.reg_but {
+    width: 250px;
+    height: 50px;
+    border: 1px solid var(--main-background-color);
+    border-radius: 5px;
+    background-color: var(--main-text);
+    color: var(--main-background-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reg_but:hover {
+    background-color: var(--hover-color);
+}
+
+.log {
+    height: 45px;
+    max-width: 700px;
+    width: 100%;
+}
+
+
+/* выпадающее меню */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .show {display:block;}
+
+  @media screen and (max-width: 480px) {
+
+    .container {
+        padding: 0 42px;
+        margin: 0 auto;
+    }
+
+    .left_gerb {
+        width: 51px;
+        height: 102px;
+
+    }
+
+    .right_gerb {
+        width: 51px;
+        height: 102px;
+    }
+
+    .big_profile_pic {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 1px solid var(--main-text);
+        margin-top: 44px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .adm_inp {
+        max-width: 120px;
+        height: 25px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .form_container {
+        margin: 8px;
+        display: flex;
+        font-size: 6px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        background-color: var(--secondary-background-color);
+        max-width: 910px;
+        width: 100%;
+        color: var(--main-text);
+    }
+    
+    
+    .form_container:first-child {
+        padding-top: 8px;
+    }
+
+    .left_grid_content {
+        font-size: 10px;
+    }
+
+    .confirm_points {
+        width: 100px;
+        height: 40px;
+        margin: 16px auto 8px auto;
+        border: 1px solid var(--main-background-color);
+        border-radius: 5px;
+        background-color: var(--main-text);
+        color: var(--main-background-color);
+    }
+
+    .create_add_container {
+        font-size: 10px;
+    }
+
+    .authorization_button {
+        height: 120px;
+        width: 250px;
+        border-radius: 20px;
+        border: 2px solid black;
+        margin: 0 auto;
+        margin-top: 370px;
+        background-color: var(--main-text);
+        color: var(--main-background-color);
+        font-size: 36px;
+    }
+
+    .reg_cont * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .log {
+        height: 45px;
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .profile_grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+
+    .start {
+        font-size: 12px;
+    }
+
+    .legend_txt {
+        font-size: 12px;
+    }
+
+    .left_grid_content {
+        padding-top: 12px;
+    }
+
+    .left_grid_content:last-child {
+        padding-top: 12px;
+        padding-bottom: 48px;
+    }
+
+    .bears_legend * {
+        margin-left: 6px;
+        margin-right: 6px;
+        padding: 4px 0px 4px 0px;
+    }
+
+    .bears_legend {
+        margin: 8px 0px 8px 8px;
+    }
+
+    .bars_legend * {
+        margin-left: 6px;
+        margin-right: 6px;
+        padding: 4px 0px 4px 0px;
+    }
+
+    .bars_legend {
+        margin: 8px 0px 8px 8px;
+    }
+
+    .ryisi_legend * {
+        margin-left: 6px;
+        margin-right: 6px;
+        padding: 4px 0px 4px 0px;
+    }
+
+    .ryisi_legend {
+        margin: 8px 0px 8px 8px;
+    }
+
+    .eagles_legend * {
+        margin-left: 6px;
+        margin-right: 6px;
+        padding: 4px 0px 4px 0px;
+    }
+
+    .eagles_legend {
+        margin: 8px 0px 8px 8px;
+    }
+
+    .lr {
+        font-size: 16px;
+    }
+
+    .rr {
+        font-size: 14px;
+    }
+
+    .rate_name {
+        font-size: 12px;
+    }
+
+    .rate_num {
+        font-size: 12px;
+    }
+
+}
